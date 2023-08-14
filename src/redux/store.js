@@ -4,5 +4,5 @@ import thunk from 'redux-thunk';
 
 export const store =  configureStore({
     reducer: reducer,
-    middleware: thunk
+    middleware: [thunk]
 });

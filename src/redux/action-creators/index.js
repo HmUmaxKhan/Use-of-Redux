@@ -1,6 +1,5 @@
 export const increament = (amount)=>{
-    return (dispatch)(
-        dispatch={
+    return ({
           type: 'increment',
           payload: amount
         }
@@ -9,8 +8,7 @@ export const increament = (amount)=>{
 
 
 export const decrement = (amount)=>{
-    return (dispatch)(
-        dispatch={
+    return({
             type: 'decrement',
             payload: amount
         }

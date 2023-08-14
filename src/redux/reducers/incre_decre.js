@@ -1,4 +1,4 @@
-export default reducer = (state = 5, action) => {
+const reducer = (state = 5, action) => {
   if (action.type === "increment") {
     return state + action.payload;
   } else if (action.type === "decrement") {
@@ -7,3 +7,5 @@ export default reducer = (state = 5, action) => {
     return state;
   }
 };
+
+export default reducer;

@@ -1,6 +1,8 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 function Navbar() {
+    const amount = useSelector(state=>state.amount);
   return (
     <div>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -15,7 +17,7 @@ function Navbar() {
             <a className="nav-link active" aria-current="page" href="/">Home</a>
           </li>
         </ul>
-        <h4>Your Score = 1000</h4>
+        <h4>Your Score = {amount}</h4>
         
       </div>
     </div>
